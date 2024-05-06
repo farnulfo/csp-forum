@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+
+        <form action="Forum" method="get">
+            <textarea id="commentaire" name="commentaire" rows="5" cols="33"></textarea>
+            <input type="submit" value="Post!" />
+            <input type="hidden" id="action" name="action" value="poster">
+        </form>
+
+        <hr>
+        <form action="Forum" method="get">
+            <input type="text" id="csp" name="csp">
+            <input type="submit" value="Post!" />
+            <input type="hidden" id="action" name="action" value="updatecsp">
+        </form>
+
+        <form action="Forum" method="get">
+            <fieldset>
+                <legend>Escape HTML:</legend>
+                <div>
+                    <input type="checkbox" id="on" name="escapehtml" />
+                    <label for="on">On</label>
+                </div>
+            </fieldset>
+        </form>        
+
+    </body>
+</html>
